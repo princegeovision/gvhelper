@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "tmpObject.h"
 
 FOUNDATION_EXPORT double gvhelperVersionNumber;
 FOUNDATION_EXPORT const unsigned char gvhelperVersionString[];

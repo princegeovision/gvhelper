@@ -7,7 +7,7 @@
 
 import Foundation
 
-class GvHelper: NSObject {
+public class GvHelper: NSObject {
     
     private let version_major : Int = 0
     private let version_minor : Int = 1
