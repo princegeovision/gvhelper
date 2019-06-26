@@ -16,7 +16,10 @@
 		91CD694181AE110F879D742CF1E285D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		9CC3A29739E51623E68A9625358E085C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		D89A38B822EF8A1A228CD20EC6E9AD79 /* Pods-gvhelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB42298AA478780B629330415FEF133 /* Pods-gvhelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EF2E2C6522C3415800C6582A /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E2C6422C3415800C6582A /* ReplaceMe.swift */; };
+		EF2E2C6D22C348F500C6582A /* tmpObject.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2E2C6B22C348F500C6582A /* tmpObject.h */; };
+		EF2E2C6E22C348F500C6582A /* tmpObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2E2C6C22C348F500C6582A /* tmpObject.m */; };
+		EF2E2C7022C34C0D00C6582A /* GvHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E2C6F22C34C0D00C6582A /* GvHelper.swift */; };
+		EF2E2C7222C351E000C6582A /* GVImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E2C7122C351E000C6582A /* GVImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +70,10 @@
 		CEA426BD6E021C1E46632FA13422C6D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D01A6F478A630C57FC76EFCD6047007C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7F7F3C5D92999BCF206A1D2F244E148 /* Pods_gvhelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gvhelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF2E2C6422C3415800C6582A /* ReplaceMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		EF2E2C6B22C348F500C6582A /* tmpObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tmpObject.h; sourceTree = "<group>"; };
+		EF2E2C6C22C348F500C6582A /* tmpObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tmpObject.m; sourceTree = "<group>"; };
+		EF2E2C6F22C34C0D00C6582A /* GvHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GvHelper.swift; sourceTree = "<group>"; };
+		EF2E2C7122C351E000C6582A /* GVImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GVImageViewExtension.swift; sourceTree = "<group>"; };
 		FAB42298AA478780B629330415FEF133 /* Pods-gvhelper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-gvhelper_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +108,9 @@
 		0BC319E0AA8F3B1FF8362369B0640DCD /* gvhelper */ = {
 			isa = PBXGroup;
 			children = (
-				EF2E2C6422C3415800C6582A /* ReplaceMe.swift */,
+				EF2E2C6622C3487800C6582A /* objc */,
+				EF2E2C6F22C34C0D00C6582A /* GvHelper.swift */,
+				EF2E2C7122C351E000C6582A /* GVImageViewExtension.swift */,
 				26D2928A30ECD6F3E74974C1C7F4277D /* Pod */,
 				1118728EF863F91DC70D9374B85E62A2 /* Support Files */,
 			);
@@ -221,6 +229,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EF2E2C6622C3487800C6582A /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E2C6B22C348F500C6582A /* tmpObject.h */,
+				EF2E2C6C22C348F500C6582A /* tmpObject.m */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -237,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				063C45FE3B47FC4752C8B935C44FA3A7 /* gvhelper-umbrella.h in Headers */,
+				EF2E2C6D22C348F500C6582A /* tmpObject.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +387,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF2E2C6522C3415800C6582A /* ReplaceMe.swift in Sources */,
+				EF2E2C6E22C348F500C6582A /* tmpObject.m in Sources */,
+				EF2E2C7222C351E000C6582A /* GVImageViewExtension.swift in Sources */,
+				EF2E2C7022C34C0D00C6582A /* GvHelper.swift in Sources */,
 				2182DEC7175D60B1B6AD11C1E71F720F /* gvhelper-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,7 +478,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/gvhelper/gvhelper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/gvhelper/gvhelper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/gvhelper/gvhelper.modulemap";
 				PRODUCT_MODULE_NAME = gvhelper;
@@ -522,7 +542,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/gvhelper/gvhelper-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/gvhelper/gvhelper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/gvhelper/gvhelper.modulemap";
 				PRODUCT_MODULE_NAME = gvhelper;

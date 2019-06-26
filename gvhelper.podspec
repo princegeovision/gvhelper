@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'gvhelper'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of gvhelper.'
+  s.summary          = 'Help development application faster, by using reliable class.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,15 +28,22 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/princegeovision/gvhelper.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'gvhelper/Classes/**/*'
+  s.ios.deployment_target = '9.3'
+  # org: all file in Classes folder.
+  # s.source_files = 'gvhelper/Classes/**/*'
+  # new: only swift file is included. 
+  s.source_files = 'gvhelper/Classes/*.swift', 'gvhelper/objc/*'
+  # OS Specific file
+  # s.ios.framework = 'gvhelper/Classes/ios/*.swift'
+  # All Objective-C Header will be included.
+  s.public_header_files = 'gvhelper/objc/*.h'
   
-  # s.resource_bundles = {
-  #   'gvhelper' => ['gvhelper/Assets/*.png']
-  # }
-
+  s.resource_bundles = {
+     'gvhelper' => ['gvhelper/Assets/*.png']
+  }
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  # Related Dependency Framework.
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

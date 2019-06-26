@@ -19,4 +19,8 @@ pod lib create gvhelper
 - [Project]->Scheme->Edit Scheme->Run->Arguments(Tab)->environment variable:
 - add the following : Name:OS_ACTIVITY_MODE, Value: disable
 
-
+### Step4 : Edit Podspace
+- add object-c
+### Step5 : replace first file
+- delete file "Classes/ReplaceMe.swift".
+- add GvHelper.swift
