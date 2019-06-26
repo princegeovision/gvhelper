@@ -1,0 +1,6 @@
+framework module gvhelper {
+  umbrella header "gvhelper-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - gvhelper (0.1.0)
+
+DEPENDENCIES:
+  - gvhelper (from `../`)
+
+EXTERNAL SOURCES:
+  gvhelper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  gvhelper: 4219dbf1dafeeabf4b780e9224b77677adf18a09
+
+PODFILE CHECKSUM: 3748df517a8ce3a8a8e9a1343415ab8376f6ad4c
+
+COCOAPODS: 1.6.1

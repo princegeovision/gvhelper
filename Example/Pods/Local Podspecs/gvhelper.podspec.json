@@ -1,0 +1,22 @@
+{
+  "name": "gvhelper",
+  "version": "0.1.0",
+  "summary": "A short description of gvhelper.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/princegeovision/gvhelper",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "princegeovision": "prince.geovision.tw@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/princegeovision/gvhelper.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "gvhelper/Classes/**/*"
+}

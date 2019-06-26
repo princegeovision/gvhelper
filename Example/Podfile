@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'gvhelper_Example' do
+  pod 'gvhelper', :path => '../'
+
+  target 'gvhelper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
