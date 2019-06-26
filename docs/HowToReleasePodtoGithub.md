@@ -14,4 +14,9 @@ pod lib lint gvhelper.podspec
 
 ### 4. Release Tab on Github
 - Github->Release->create release->match version.
-- 
+
+### 5. Trunk
+```
+pod trunk register [Email] [name]
+pod trunk push gvhelper.podspec
+```
