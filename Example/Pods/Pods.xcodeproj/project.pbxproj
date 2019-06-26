@@ -18,8 +18,6 @@
 		D89A38B822EF8A1A228CD20EC6E9AD79 /* Pods-gvhelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB42298AA478780B629330415FEF133 /* Pods-gvhelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF2E2C6D22C348F500C6582A /* tmpObject.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2E2C6B22C348F500C6582A /* tmpObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF2E2C6E22C348F500C6582A /* tmpObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2E2C6C22C348F500C6582A /* tmpObject.m */; };
-		EF2E2C7022C34C0D00C6582A /* GvHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E2C6F22C34C0D00C6582A /* GvHelper.swift */; };
-		EF2E2C7222C351E000C6582A /* GVImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E2C7122C351E000C6582A /* GVImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +70,6 @@
 		E7F7F3C5D92999BCF206A1D2F244E148 /* Pods_gvhelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gvhelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2E2C6B22C348F500C6582A /* tmpObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tmpObject.h; sourceTree = "<group>"; };
 		EF2E2C6C22C348F500C6582A /* tmpObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tmpObject.m; sourceTree = "<group>"; };
-		EF2E2C6F22C34C0D00C6582A /* GvHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GvHelper.swift; sourceTree = "<group>"; };
-		EF2E2C7122C351E000C6582A /* GVImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GVImageViewExtension.swift; sourceTree = "<group>"; };
 		FAB42298AA478780B629330415FEF133 /* Pods-gvhelper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-gvhelper_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,8 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				EF2E2C6622C3487800C6582A /* objc */,
-				EF2E2C6F22C34C0D00C6582A /* GvHelper.swift */,
-				EF2E2C7122C351E000C6582A /* GVImageViewExtension.swift */,
 				26D2928A30ECD6F3E74974C1C7F4277D /* Pod */,
 				1118728EF863F91DC70D9374B85E62A2 /* Support Files */,
 			);
@@ -388,8 +382,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2E2C6E22C348F500C6582A /* tmpObject.m in Sources */,
-				EF2E2C7222C351E000C6582A /* GVImageViewExtension.swift in Sources */,
-				EF2E2C7022C34C0D00C6582A /* GvHelper.swift in Sources */,
 				2182DEC7175D60B1B6AD11C1E71F720F /* gvhelper-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

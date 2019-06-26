@@ -9,17 +9,15 @@
 Pod::Spec.new do |s|
   s.name             = 'gvhelper'
   s.version          = '0.1.0'
-  s.summary          = 'Help development application faster, by using reliable class.'
-
+  s.summary          = 'Help Class and Extension'
+  s.swift_version    = '4.2'
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'Help Class and Extension will facilitate development application. Also to development application faster, by using reliable class.'
 
   s.homepage         = 'https://github.com/princegeovision/gvhelper'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -32,14 +30,14 @@ TODO: Add long description of the pod here.
   # org: all file in Classes folder.
   # s.source_files = 'gvhelper/Classes/**/*'
   # new: only swift file is included. 
-  s.source_files = 'gvhelper/Classes/*.swift', 'gvhelper/objc/*'
+  s.source_files = 'Classes/*.swift', 'objc/*'
   # OS Specific file
   # s.ios.framework = 'gvhelper/Classes/ios/*.swift'
   # All Objective-C Header will be included.
-  s.public_header_files = 'gvhelper/objc/*.h'
+  s.public_header_files = 'objc/*.h'
   
   s.resource_bundles = {
-     'gvhelper' => ['gvhelper/Assets/*.png']
+     'gvhelper' => ['Assets/*.png']
   }
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
