@@ -10,4 +10,8 @@ pod lib lint gvhelper.podspec
 ```
 - fixed ERROR and WARNING accordingly.
 
-### 3. 
+### 3. Push to Github 
+
+### 4. Release Tab on Github
+- Github->Release->create release->match version.
+- 
