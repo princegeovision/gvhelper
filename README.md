@@ -3,7 +3,8 @@
 ## Goal:
 - Help development application faster, by using reliable class.
 
-
+## Swift Version:
+- 4.2
 
 ## Author
 
