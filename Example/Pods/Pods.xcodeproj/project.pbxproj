@@ -18,6 +18,10 @@
 		D89A38B822EF8A1A228CD20EC6E9AD79 /* Pods-gvhelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB42298AA478780B629330415FEF133 /* Pods-gvhelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF2E2C6D22C348F500C6582A /* tmpObject.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2E2C6B22C348F500C6582A /* tmpObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF2E2C6E22C348F500C6582A /* tmpObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2E2C6C22C348F500C6582A /* tmpObject.m */; };
+		EFC69B8622D865F900FE65F2 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = EFC69B8322D865F900FE65F2 /* .gitkeep */; };
+		EFC69B8722D865F900FE65F2 /* GvHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69B8422D865F900FE65F2 /* GvHelper.swift */; };
+		EFC69B8822D865F900FE65F2 /* GVImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69B8522D865F900FE65F2 /* GVImageViewExtension.swift */; };
+		EFC69B8A22D8662000FE65F2 /* GEO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69B8922D8662000FE65F2 /* GEO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,10 @@
 		E7F7F3C5D92999BCF206A1D2F244E148 /* Pods_gvhelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gvhelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2E2C6B22C348F500C6582A /* tmpObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tmpObject.h; sourceTree = "<group>"; };
 		EF2E2C6C22C348F500C6582A /* tmpObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tmpObject.m; sourceTree = "<group>"; };
+		EFC69B8322D865F900FE65F2 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EFC69B8422D865F900FE65F2 /* GvHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GvHelper.swift; sourceTree = "<group>"; };
+		EFC69B8522D865F900FE65F2 /* GVImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GVImageViewExtension.swift; sourceTree = "<group>"; };
+		EFC69B8922D8662000FE65F2 /* GEO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GEO.swift; sourceTree = "<group>"; };
 		FAB42298AA478780B629330415FEF133 /* Pods-gvhelper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-gvhelper_Tests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +112,7 @@
 		0BC319E0AA8F3B1FF8362369B0640DCD /* gvhelper */ = {
 			isa = PBXGroup;
 			children = (
+				EFC69B8222D865F900FE65F2 /* Classes */,
 				EF2E2C6622C3487800C6582A /* objc */,
 				26D2928A30ECD6F3E74974C1C7F4277D /* Pod */,
 				1118728EF863F91DC70D9374B85E62A2 /* Support Files */,
@@ -230,6 +239,17 @@
 				EF2E2C6C22C348F500C6582A /* tmpObject.m */,
 			);
 			path = objc;
+			sourceTree = "<group>";
+		};
+		EFC69B8222D865F900FE65F2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EFC69B8322D865F900FE65F2 /* .gitkeep */,
+				EFC69B8422D865F900FE65F2 /* GvHelper.swift */,
+				EFC69B8522D865F900FE65F2 /* GVImageViewExtension.swift */,
+				EFC69B8922D8662000FE65F2 /* GEO.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC69B8622D865F900FE65F2 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,8 +402,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFC69B8A22D8662000FE65F2 /* GEO.swift in Sources */,
 				EF2E2C6E22C348F500C6582A /* tmpObject.m in Sources */,
+				EFC69B8822D865F900FE65F2 /* GVImageViewExtension.swift in Sources */,
 				2182DEC7175D60B1B6AD11C1E71F720F /* gvhelper-dummy.m in Sources */,
+				EFC69B8722D865F900FE65F2 /* GvHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1914F4329D97348CB0275EB96527CB9 /* gvhelper.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -478,6 +503,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -522,6 +548,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1914F4329D97348CB0275EB96527CB9 /* gvhelper.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
