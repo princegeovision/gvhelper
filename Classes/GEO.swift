@@ -43,9 +43,15 @@ public struct GvDeviceInfo {
 }
 
 /// Note: Default data for only demo and test.
+/// Internal use would be ok, but not public. I think it is because GEO is struct, not class.
 public struct GEO {
-    let demoSite : [GvDeviceInfo] = [GvDeviceInfo(name: "demo1-BX2500", ip: GEOdefault.demositeIP, user: GEOdefault.demositeAuth, pass: GEOdefault.demositeAuth, idx: 0), GvDeviceInfo(name: "demo2-FE520", ip: GEOdefault.demositeIP, user: GEOdefault.demositeAuth, pass: GEOdefault.demositeAuth, idx: 1), GvDeviceInfo(name: "demo3-SD220", ip: GEOdefault.demositeIP, user: GEOdefault.demositeAuth, pass: GEOdefault.demositeAuth, idx: 2)]
-    
+    public let demoSite : [GvDeviceInfo] = [GvDeviceInfo(name: "demo1-BX2500", ip: GEOdefault.demositeIP, user: GEOdefault.demositeAuth, pass: GEOdefault.demositeAuth, idx: 0), GvDeviceInfo(name: "demo2-FE520", ip: GEOdefault.demositeIP, user: GEOdefault.demositeAuth, pass: GEOdefault.demositeAuth, idx: 1), GvDeviceInfo(name: "demo3-SD220", ip: GEOdefault.demositeIP, user: GEOdefault.demositeAuth, pass: GEOdefault.demositeAuth, idx: 2)]
+
+//    private init(){}
+//    public static let obj: GEO = {
+//        let instance = GEO()
+//        return instance
+//    }()
 }
 
 extension UserDefaults {

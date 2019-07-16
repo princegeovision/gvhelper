@@ -11,7 +11,7 @@ public class GvHelper: NSObject {
     
     private let version_major : Int = 0
     private let version_minor : Int = 1
-    private let version_patch : Int = 0
+    private let version_patch : Int = 1
     
     private override init(){}
     public static let hp: GvHelper = {
@@ -23,4 +23,5 @@ public class GvHelper: NSObject {
             return "\(version_major).\(version_minor).\(version_patch)"
         }
     }
+    //public var geo = GEO()
 }

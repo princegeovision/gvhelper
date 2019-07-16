@@ -14,9 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var testImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        //GvHelper.hp.version
-        //gvhelperVersionNumber
+
         print("\(GvHelper.hp.version)")
+
         self.testImageView.roundViewWith(borderColor: .white, borderWidth: 5.0)
     }
 
