@@ -23,5 +23,4 @@ public class GvHelper: NSObject {
             return "\(version_major).\(version_minor).\(version_patch)"
         }
     }
-    //public var geo = GEO()
 }
