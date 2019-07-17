@@ -27,6 +27,7 @@
 		EF2E2C6E22C348F500C6582A /* tmpObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2E2C6C22C348F500C6582A /* tmpObject.m */; };
 		EF722B7822DF266300AB6B1B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF722B7722DF266300AB6B1B /* UIView+Extension.swift */; };
 		EF722B7A22DF267A00AB6B1B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF722B7922DF267A00AB6B1B /* String+Extension.swift */; };
+		EF722B7C22DF285700AB6B1B /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF722B7B22DF285700AB6B1B /* UIImage.swift */; };
 		EFC69B8622D865F900FE65F2 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = EFC69B8322D865F900FE65F2 /* .gitkeep */; };
 		EFC69B8722D865F900FE65F2 /* GvHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69B8422D865F900FE65F2 /* GvHelper.swift */; };
 		EFC69B8822D865F900FE65F2 /* GVImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69B8522D865F900FE65F2 /* GVImageViewExtension.swift */; };
@@ -92,6 +93,7 @@
 		EF2E2C6C22C348F500C6582A /* tmpObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tmpObject.m; sourceTree = "<group>"; };
 		EF722B7722DF266300AB6B1B /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		EF722B7922DF267A00AB6B1B /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		EF722B7B22DF285700AB6B1B /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		EFC69B8322D865F900FE65F2 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		EFC69B8422D865F900FE65F2 /* GvHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GvHelper.swift; sourceTree = "<group>"; };
 		EFC69B8522D865F900FE65F2 /* GVImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GVImageViewExtension.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 		EF097E8922DEF8650028C441 /* ExtensionCollections */ = {
 			isa = PBXGroup;
 			children = (
+				EF722B7B22DF285700AB6B1B /* UIImage.swift */,
 				EF722B7922DF267A00AB6B1B /* String+Extension.swift */,
 				EF722B7722DF266300AB6B1B /* UIView+Extension.swift */,
 				EF097E8A22DEF8650028C441 /* UIView+Positioning.swift */,
@@ -459,6 +462,7 @@
 				EF097E8822DEF2820028C441 /* VersionInfoView.swift in Sources */,
 				EF097E8E22DF11240028C441 /* RouterHelper.swift in Sources */,
 				2182DEC7175D60B1B6AD11C1E71F720F /* gvhelper-dummy.m in Sources */,
+				EF722B7C22DF285700AB6B1B /* UIImage.swift in Sources */,
 				EFC69B8722D865F900FE65F2 /* GvHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

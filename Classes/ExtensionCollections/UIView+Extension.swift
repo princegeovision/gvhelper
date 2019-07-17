@@ -48,7 +48,7 @@ extension UIView {
         while parentResponder != nil {
             parentResponder = parentResponder!.next
             if parentResponder is UIViewController {
-                return parentResponder as! UIViewController!
+                return parentResponder as? UIViewController //as! UIViewController!
             }
         }
         return nil
@@ -59,5 +59,4 @@ extension UIView {
         layer.borderWidth = 1
         layer.borderColor = color.cgColor
     }
-    
 }
