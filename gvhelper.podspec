@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'gvhelper'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'Help Class and Extension'
   s.swift_version    = '4.2'
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   # org: all file in Classes folder.
   # s.source_files = 'gvhelper/Classes/**/*'
   # new: only swift file is included. 
-  s.source_files = 'Classes/*.swift', 'Classes/ExtensionCollections/*.swift', 'Classes/Presentation/*.swift', 'objc/*'
+  s.source_files = 'Classes/*.swift', 'Classes/ExtensionCollections/*.swift', 'Classes/Presentation/*', 'objc/*'
   # OS Specific file
   # s.ios.framework = 'gvhelper/Classes/ios/*.swift'
   # All Objective-C Header will be included.
