@@ -20,6 +20,9 @@
 		EF097E8622DEF20C0028C441 /* VersionVC2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF097E8522DEF20C0028C441 /* VersionVC2.storyboard */; };
 		EF097E8822DEF2820028C441 /* VersionInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF097E8722DEF2820028C441 /* VersionInfoView.swift */; };
 		EF097E8B22DEF8660028C441 /* UIView+Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF097E8A22DEF8650028C441 /* UIView+Positioning.swift */; };
+		EF097E8E22DF11240028C441 /* RouterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF097E8D22DF11240028C441 /* RouterHelper.swift */; };
+		EF097E9022DF13B90028C441 /* UIVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF097E8F22DF13B90028C441 /* UIVC+Extension.swift */; };
+		EF097E9222DF149C0028C441 /* Helper.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF097E9122DF149C0028C441 /* Helper.xcassets */; };
 		EF2E2C6D22C348F500C6582A /* tmpObject.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2E2C6B22C348F500C6582A /* tmpObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF2E2C6E22C348F500C6582A /* tmpObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2E2C6C22C348F500C6582A /* tmpObject.m */; };
 		EFC69B8622D865F900FE65F2 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = EFC69B8322D865F900FE65F2 /* .gitkeep */; };
@@ -80,6 +83,9 @@
 		EF097E8522DEF20C0028C441 /* VersionVC2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VersionVC2.storyboard; sourceTree = "<group>"; };
 		EF097E8722DEF2820028C441 /* VersionInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionInfoView.swift; sourceTree = "<group>"; };
 		EF097E8A22DEF8650028C441 /* UIView+Positioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Positioning.swift"; sourceTree = "<group>"; };
+		EF097E8D22DF11240028C441 /* RouterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterHelper.swift; sourceTree = "<group>"; };
+		EF097E8F22DF13B90028C441 /* UIVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVC+Extension.swift"; sourceTree = "<group>"; };
+		EF097E9122DF149C0028C441 /* Helper.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Helper.xcassets; path = Classes/Helper.xcassets; sourceTree = "<group>"; };
 		EF2E2C6B22C348F500C6582A /* tmpObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tmpObject.h; sourceTree = "<group>"; };
 		EF2E2C6C22C348F500C6582A /* tmpObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tmpObject.m; sourceTree = "<group>"; };
 		EFC69B8322D865F900FE65F2 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
@@ -124,6 +130,7 @@
 				EF2E2C6622C3487800C6582A /* objc */,
 				26D2928A30ECD6F3E74974C1C7F4277D /* Pod */,
 				1118728EF863F91DC70D9374B85E62A2 /* Support Files */,
+				EF097E9122DF149C0028C441 /* Helper.xcassets */,
 			);
 			name = gvhelper;
 			path = ../..;
@@ -246,6 +253,7 @@
 				EF097E8322DEF1F60028C441 /* VersionVC2.swift */,
 				EF097E8522DEF20C0028C441 /* VersionVC2.storyboard */,
 				EF097E8722DEF2820028C441 /* VersionInfoView.swift */,
+				EF097E8D22DF11240028C441 /* RouterHelper.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -254,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				EF097E8A22DEF8650028C441 /* UIView+Positioning.swift */,
+				EF097E8F22DF13B90028C441 /* UIVC+Extension.swift */,
 			);
 			path = ExtensionCollections;
 			sourceTree = "<group>";
@@ -421,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC69B8622D865F900FE65F2 /* .gitkeep in Resources */,
+				EF097E9222DF149C0028C441 /* Helper.xcassets in Resources */,
 				EF097E8622DEF20C0028C441 /* VersionVC2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,12 +442,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF097E9022DF13B90028C441 /* UIVC+Extension.swift in Sources */,
 				EFC69B8A22D8662000FE65F2 /* GEO.swift in Sources */,
 				EF2E2C6E22C348F500C6582A /* tmpObject.m in Sources */,
 				EF097E8B22DEF8660028C441 /* UIView+Positioning.swift in Sources */,
 				EF097E8422DEF1F70028C441 /* VersionVC2.swift in Sources */,
 				EFC69B8822D865F900FE65F2 /* GVImageViewExtension.swift in Sources */,
 				EF097E8822DEF2820028C441 /* VersionInfoView.swift in Sources */,
+				EF097E8E22DF11240028C441 /* RouterHelper.swift in Sources */,
 				2182DEC7175D60B1B6AD11C1E71F720F /* gvhelper-dummy.m in Sources */,
 				EFC69B8722D865F900FE65F2 /* GvHelper.swift in Sources */,
 			);
