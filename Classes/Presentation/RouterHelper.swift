@@ -7,7 +7,11 @@
 
 import Foundation
 
-
+enum HelperVC {
+    static let VersionVC2 = "VersionVC2"
+    
+}
+//Useful when bundle.main is our only bundle
 enum AppStoryboard : String {
     //SOP01 定義新的 Storyboard. (增加 case)
     //case Main = "Main"
@@ -49,12 +53,25 @@ public class RouterHelper {
         //self.setupNaviMenu()
         //if(self.isLog) {current_log?.log("<<", type: .debug)}
     }
-    
-    public func displayVC(_ vcid : String ){
+    /// Currently No Navigation Bar.
+    public func getVCInstance(_ vcid : String)->UIViewController {
+        print("getVCInstance: \(vcid)")
+        let podBundle = Bundle(for: VersionVC2.self)
+        let vc2 = UIStoryboard(name: HelperVC.VersionVC2, bundle: podBundle)
         
-        //let accountCheckVC = AppStoryboard.Authentication.getVC(vcClass: AccountCheckVC.self)
-        //self.currentNC_?.pushViewController(accountCheckVC, animated: false)
-        
+        if let targetViewController = vc2.instantiateViewController(withIdentifier: HelperVC.VersionVC2) as? UIViewController {
+            
+            return targetViewController
+        }
     }
+//    public func displayVC(_ vcid : String ) -> UIViewController{
+//        print("displayVC: \(vcid)")
+//        //let version = AppStoryboard.VersionVC2.getVC(vcClass: VersionVC2.self)
+//        //return version
+//
+//        //let accountCheckVC = AppStoryboard.Authentication.getVC(vcClass: AccountCheckVC.self)
+//        //self.currentNC_?.pushViewController(accountCheckVC, animated: false)
+//
+//    }
     
 }
