@@ -15,6 +15,10 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		EF097E7E22DEEF550028C441 /* HowToUsePod.md in Resources */ = {isa = PBXBuildFile; fileRef = EF097E7A22DEEF550028C441 /* HowToUsePod.md */; };
+		EF097E7F22DEEF550028C441 /* HowToCreatePod.md in Resources */ = {isa = PBXBuildFile; fileRef = EF097E7B22DEEF550028C441 /* HowToCreatePod.md */; };
+		EF097E8022DEEF550028C441 /* AVHelper.md in Resources */ = {isa = PBXBuildFile; fileRef = EF097E7C22DEEF550028C441 /* AVHelper.md */; };
+		EF097E8122DEEF550028C441 /* HowToReleasePodtoGithub.md in Resources */ = {isa = PBXBuildFile; fileRef = EF097E7D22DEEF550028C441 /* HowToReleasePodtoGithub.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		7F5FB4EE21DD30BF9EC61878 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A3014D8AF4B4E6843F77619E /* Pods_gvhelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gvhelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEFF0B73347F8FE68161E539 /* Pods-gvhelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gvhelper_Tests.debug.xcconfig"; path = "Target Support Files/Pods-gvhelper_Tests/Pods-gvhelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF097E7A22DEEF550028C441 /* HowToUsePod.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = HowToUsePod.md; sourceTree = "<group>"; };
+		EF097E7B22DEEF550028C441 /* HowToCreatePod.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = HowToCreatePod.md; sourceTree = "<group>"; };
+		EF097E7C22DEEF550028C441 /* AVHelper.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = AVHelper.md; sourceTree = "<group>"; };
+		EF097E7D22DEEF550028C441 /* HowToReleasePodtoGithub.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = HowToReleasePodtoGithub.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				EF097E7922DEEF550028C441 /* docs */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for gvhelper */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -157,6 +166,18 @@
 				39561F8A15A1FBD23151FE49 /* Pods-gvhelper_Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EF097E7922DEEF550028C441 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				EF097E7A22DEEF550028C441 /* HowToUsePod.md */,
+				EF097E7B22DEEF550028C441 /* HowToCreatePod.md */,
+				EF097E7C22DEEF550028C441 /* AVHelper.md */,
+				EF097E7D22DEEF550028C441 /* HowToReleasePodtoGithub.md */,
+			);
+			name = docs;
+			path = ../docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,8 +268,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF097E7F22DEEF550028C441 /* HowToCreatePod.md in Resources */,
+				EF097E8122DEEF550028C441 /* HowToReleasePodtoGithub.md in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				EF097E8022DEEF550028C441 /* AVHelper.md in Resources */,
+				EF097E7E22DEEF550028C441 /* HowToUsePod.md in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,6 +16,10 @@
 		91CD694181AE110F879D742CF1E285D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		9CC3A29739E51623E68A9625358E085C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		D89A38B822EF8A1A228CD20EC6E9AD79 /* Pods-gvhelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAB42298AA478780B629330415FEF133 /* Pods-gvhelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF097E8422DEF1F70028C441 /* VersionVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF097E8322DEF1F60028C441 /* VersionVC2.swift */; };
+		EF097E8622DEF20C0028C441 /* VersionVC2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF097E8522DEF20C0028C441 /* VersionVC2.storyboard */; };
+		EF097E8822DEF2820028C441 /* VersionInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF097E8722DEF2820028C441 /* VersionInfoView.swift */; };
+		EF097E8B22DEF8660028C441 /* UIView+Positioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF097E8A22DEF8650028C441 /* UIView+Positioning.swift */; };
 		EF2E2C6D22C348F500C6582A /* tmpObject.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2E2C6B22C348F500C6582A /* tmpObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF2E2C6E22C348F500C6582A /* tmpObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EF2E2C6C22C348F500C6582A /* tmpObject.m */; };
 		EFC69B8622D865F900FE65F2 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = EFC69B8322D865F900FE65F2 /* .gitkeep */; };
@@ -72,6 +76,10 @@
 		CEA426BD6E021C1E46632FA13422C6D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D01A6F478A630C57FC76EFCD6047007C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E7F7F3C5D92999BCF206A1D2F244E148 /* Pods_gvhelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gvhelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF097E8322DEF1F60028C441 /* VersionVC2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VersionVC2.swift; sourceTree = "<group>"; };
+		EF097E8522DEF20C0028C441 /* VersionVC2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VersionVC2.storyboard; sourceTree = "<group>"; };
+		EF097E8722DEF2820028C441 /* VersionInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionInfoView.swift; sourceTree = "<group>"; };
+		EF097E8A22DEF8650028C441 /* UIView+Positioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Positioning.swift"; sourceTree = "<group>"; };
 		EF2E2C6B22C348F500C6582A /* tmpObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tmpObject.h; sourceTree = "<group>"; };
 		EF2E2C6C22C348F500C6582A /* tmpObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tmpObject.m; sourceTree = "<group>"; };
 		EFC69B8322D865F900FE65F2 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
@@ -232,6 +240,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EF097E8222DEF1F60028C441 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EF097E8322DEF1F60028C441 /* VersionVC2.swift */,
+				EF097E8522DEF20C0028C441 /* VersionVC2.storyboard */,
+				EF097E8722DEF2820028C441 /* VersionInfoView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EF097E8922DEF8650028C441 /* ExtensionCollections */ = {
+			isa = PBXGroup;
+			children = (
+				EF097E8A22DEF8650028C441 /* UIView+Positioning.swift */,
+			);
+			path = ExtensionCollections;
+			sourceTree = "<group>";
+		};
 		EF2E2C6622C3487800C6582A /* objc */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +270,8 @@
 		EFC69B8222D865F900FE65F2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				EF097E8922DEF8650028C441 /* ExtensionCollections */,
+				EF097E8222DEF1F60028C441 /* Presentation */,
 				EFC69B8322D865F900FE65F2 /* .gitkeep */,
 				EFC69B8422D865F900FE65F2 /* GvHelper.swift */,
 				EFC69B8522D865F900FE65F2 /* GVImageViewExtension.swift */,
@@ -393,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC69B8622D865F900FE65F2 /* .gitkeep in Resources */,
+				EF097E8622DEF20C0028C441 /* VersionVC2.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +434,10 @@
 			files = (
 				EFC69B8A22D8662000FE65F2 /* GEO.swift in Sources */,
 				EF2E2C6E22C348F500C6582A /* tmpObject.m in Sources */,
+				EF097E8B22DEF8660028C441 /* UIView+Positioning.swift in Sources */,
+				EF097E8422DEF1F70028C441 /* VersionVC2.swift in Sources */,
 				EFC69B8822D865F900FE65F2 /* GVImageViewExtension.swift in Sources */,
+				EF097E8822DEF2820028C441 /* VersionInfoView.swift in Sources */,
 				2182DEC7175D60B1B6AD11C1E71F720F /* gvhelper-dummy.m in Sources */,
 				EFC69B8722D865F900FE65F2 /* GvHelper.swift in Sources */,
 			);

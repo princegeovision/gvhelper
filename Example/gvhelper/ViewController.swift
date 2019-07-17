@@ -11,6 +11,8 @@ import gvhelper
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var openButton : UIButton!
+    
     @IBOutlet weak var testImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,5 +27,23 @@ class ViewController: UIViewController {
 
     }
 
+    
+    @IBAction func openButton_Click(_ sender: Any) {
+        
+        let podBundle = Bundle(for: VersionVC2.self)
+        
+        
+        let vVCStoryboard = UIStoryboard(name: "VersionVC2", bundle: podBundle)
+        if let targetViewController = vVCStoryboard.instantiateViewController(withIdentifier: "VersionVC2") as? UIViewController {
+
+
+            self.present(targetViewController, animated: true) {
+                print("Show-Done")
+            }
+        }
+        
+        
+    }
+    
 }
 

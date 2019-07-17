@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,14 +28,28 @@
                                     <constraint firstAttribute="width" constant="160" id="wPq-fQ-CBm"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DS-1i-zuS">
+                                <rect key="frame" x="107.5" y="429.5" width="160" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aBg-Nl-fP1"/>
+                                    <constraint firstAttribute="width" constant="160" id="qpg-kj-SFN"/>
+                                </constraints>
+                                <state key="normal" title="Open"/>
+                                <connections>
+                                    <action selector="openButton_Click:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="il2-LL-Wx9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="p95-Aa-idb" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="1pE-le-bpK"/>
+                            <constraint firstItem="5DS-1i-zuS" firstAttribute="top" secondItem="p95-Aa-idb" secondAttribute="bottom" constant="16" id="43R-tJ-njV"/>
                             <constraint firstItem="p95-Aa-idb" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="IIh-Ao-9ne"/>
+                            <constraint firstItem="5DS-1i-zuS" firstAttribute="centerX" secondItem="p95-Aa-idb" secondAttribute="centerX" id="y2z-Oa-UjO"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="openButton" destination="5DS-1i-zuS" id="qgv-fG-kJJ"/>
                         <outlet property="testImageView" destination="p95-Aa-idb" id="iDv-yU-b8S"/>
                     </connections>
                 </viewController>
