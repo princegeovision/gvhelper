@@ -17,6 +17,13 @@ extension UIViewController {
             self.navigationController?.navigationBar.isHidden = true;
         }
     }
+    /// Make sure call This function Before View Appear.
+    /// Navigation bar Tint Color and Title
+    public func setNavigationColorB4ViewAppear(bg: UIColor, txt: UIColor){
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.barTintColor = bg
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : txt]
+    }
     
     // 隱藏鍵盤
     func hideKeyboard(){

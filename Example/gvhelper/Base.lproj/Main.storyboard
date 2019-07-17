@@ -32,7 +32,6 @@
                                 <rect key="frame" x="107.5" y="429.5" width="160" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aBg-Nl-fP1"/>
-                                    <constraint firstAttribute="width" constant="160" id="qpg-kj-SFN"/>
                                 </constraints>
                                 <state key="normal" title="Open"/>
                                 <connections>
@@ -45,7 +44,8 @@
                             <constraint firstItem="p95-Aa-idb" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="1pE-le-bpK"/>
                             <constraint firstItem="5DS-1i-zuS" firstAttribute="top" secondItem="p95-Aa-idb" secondAttribute="bottom" constant="16" id="43R-tJ-njV"/>
                             <constraint firstItem="p95-Aa-idb" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="IIh-Ao-9ne"/>
-                            <constraint firstItem="5DS-1i-zuS" firstAttribute="centerX" secondItem="p95-Aa-idb" secondAttribute="centerX" id="y2z-Oa-UjO"/>
+                            <constraint firstItem="5DS-1i-zuS" firstAttribute="leading" secondItem="p95-Aa-idb" secondAttribute="leading" id="a8l-ta-6rf"/>
+                            <constraint firstItem="5DS-1i-zuS" firstAttribute="trailing" secondItem="p95-Aa-idb" secondAttribute="trailing" id="xvK-Ap-4eS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="O46-gy-ADC"/>
