@@ -16,6 +16,7 @@ gvhelper is available under the MIT license. See the LICENSE file for more info.
 
 
 ## Change Logs:
+- 0.2.0: Add VersionVC2
 - 0.1.1: Add GEO Data Model for internal use.
 - 0.1.0: Basic building block.
 
