@@ -16,6 +16,7 @@ gvhelper is available under the MIT license. See the LICENSE file for more info.
 
 
 ## Change Logs:
+- 0.2.4: Add Size Class check.
 - 0.2.3: Add Storyboard file.
 - 0.2.2: Add source code path.
 - 0.2.1: Update iOS Support Version to 10.3

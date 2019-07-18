@@ -8,6 +8,21 @@
 import Foundation
 
 extension UIViewController {
+    
+    /// Note: This function Help us to check is current size Class is good.
+    /// For determination Content Display , on Master or Detail.
+    /// Reason :
+    /// (1) Horizontal size Class, need to show content in detail (.regular)
+    /// (2) Horizontal size Class, need to show content in master (.compact)
+    func isSPWantToShowDetail()-> Bool {
+        if let hsc = splitViewController?.traitCollection.horizontalSizeClass {
+            if hsc == .regular {
+                return true
+            }
+        }
+        return false
+    }
+    
     // 開關 NavigationBar
     func showNavigationBar(_ flag:Bool){
         
